@@ -1,0 +1,9 @@
+services:
+  # Serviço da sua aplicação FastAPI
+  app:
+    build: .
+    container_name: api # Nome do container
+    ports:
+      - "8000:8000" # Mapeia a porta 8000 do host para a porta 8000 do container
+    volumes:
+      - .:/app # Mapeia o diretório atual para /app no container
